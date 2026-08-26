@@ -906,4 +906,8 @@ section{
     .projects__card img{
         height: 200px;
     }
+   .footer__container{
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
