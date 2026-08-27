@@ -100,6 +100,9 @@ section{
     left: 0;
     z-index: 1000;
     transition: 0.3s ease;
+    
+}
+.scrolled{
     backdrop-filter: blur(18px);
     border-bottom: 1px solid #9768f559;
     background: rgba(17, 19, 24, 0.84);
