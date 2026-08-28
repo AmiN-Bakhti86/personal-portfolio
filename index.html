@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>امین | Frontend Developer</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
     <script src="./icons/js/all.min.js"></script>
 </head>
 <body>
     
     <!-- ================= HEADER ================= -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__container-mobile">
             <a href="#" class="header__logo" title="بازگشت به بالا">
                 A<span>.</span>
@@ -20,8 +18,15 @@
             <button class="">
                 <i class="fa-solid fa-bars"></i>
             </button>
+            <nav class="header__open">
+                <a href="#about-me">درباره من</a>
+                <a href="#skills">مهارت‌ها</a>
+                <a href="#projects">نمونه‌کارها</a>
+                <a href="#services">خدمات</a>
+                <a href="#contact">تماس</a>
+            </nav>
         </div>
-        <div class="container header__container">
+        <div class="container header__container header__container-mobile">
             <a href="#" class="header__logo" title="بازگشت به بالا">
                 A<span>.</span>
             </a>
@@ -32,7 +37,7 @@
                 <a href="#services">خدمات</a>
                 <a href="#contact">تماس</a>
             </nav>
-            <button class="header__button Btn">شروع همکاری
+            <button class="header__button Btn" hre>شروع همکاری
                 <!-- <i class="fa-solid fa-bars"></i> -->
             </button>
             
@@ -42,7 +47,7 @@
     <main>
         <!-- ================= HERO ================= -->
         <section class="hero" id="home">
-            <div class="hero__container container">
+            <div class="hero__container container gtc-1fr">
                 <div class="hero__text">
                     <span class="hero__available">
                         <span> </span>
@@ -101,7 +106,7 @@
                     <h1>بیشتر درباره<span> من</span></h1>
                     <p>در این بخش می‌توانی خودت، مسیر یادگیری و اهداف حرفه‌ای‌ات را به کارفرما معرفی کنی.</p>
                 </div>
-                <div class="about__main">
+                <div class="about__main gtc-1fr">
                     <div class="about__main-me">
                         <p>
                             من امین هستم و در مسیر تبدیل شدن به یک توسعه‌دهنده
@@ -158,7 +163,7 @@
                     </h5>
                     <h1>تکنولوژی‌هایی که <span>بلدم</span></h1>
                 </div>
-                <div class="skills__grid">
+                <div class="skills__grid gtc-1fr">
                     <div class="skills__item">
                         <i class="fa-brands fa-html5"></i>
                         <h3>HTML5</h3>
@@ -194,7 +199,7 @@
                     <h1>پروژه های <span>من</span></h1>
                     <p>چند پروژه منتخب که مهارت‌ها و سبک کار من را نشان می‌دهند.</p>
                 </div>
-                <div class="projects__grid">
+                <div class="projects__grid gtc-1fr">
                     <article class="projects__card">
                         <img src="./images/project3.png" alt="پیش‌نمایش فروشگاه HapShop">
                         <div class="projects__content">
@@ -294,7 +299,7 @@
                     </h5>
                     <h1>چه کاری میتوانم <span>انجام دهم؟</span></h1>
                 </div>
-                <div class="services__grid">
+                <div class="services__grid gtc-1fr">
                     <div class="services__item">
                         <i class="fa-solid fa-code"></i>
                         <h3>طراحی سایت</h3>
@@ -325,7 +330,7 @@
                     </h5>
                     <h1>بیایید یک پروژه <span>بسازیم.</span></h1>
                 </div>
-                <div class="contact__main">
+                <div class="contact__main gtc-1fr">
                     <div class="contact__me">
                         <h3>تماس با من</h3>
                         <p>برای همکاری، پروژه‌های فریلنسری یا فرصت‌های شغلی می‌توانی با من در ارتباط باشی.</p>
@@ -373,12 +378,13 @@
                 </a>
             </div>
             <p>© 2026 | Designed & Developed by <span>Amin Bakhti</span></p>
+
         </div>
     </footer>
         <!-- ================= SCROLL TO TOP ================= -->
         <a href="#" class="scroll-top" title="بازگشت به بالا">
             <i class="fa-solid fa-chevron-up"></i>
         </a>
-    <script src="./js/main.js"></script>
+        <script src="./js/main.js"></script>
 </body>
 </html>
