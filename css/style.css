@@ -100,6 +100,7 @@ section{
     left: 0;
     z-index: 1000;
     transition: 0.3s ease;
+    
 }
 .scrolled{
     backdrop-filter: blur(18px);
@@ -854,6 +855,21 @@ section{
     .header__container{
         display: none;
     }
+    .header__open{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 75px;
+        left: 4%;
+        right: 4%;
+        background: #181b22;
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+        padding: 1.3rem;
+        gap: 1.5rem;
+        color: var(--text-light);
+        font-size: 14px;
+    }
     .header__container-mobile{
         display: flex;
         flex-direction: row;
@@ -873,22 +889,7 @@ section{
         border-radius: 0.5rem;
         border: 1px solid var(--border);
     }
-    .hero__container{
-        grid-template-columns: 1fr;
-    }
-    .about__main{
-        grid-template-columns: 1fr;
-    }
-    .skills__grid{
-        grid-template-columns: 1fr;
-    }
-    .projects__grid{
-        grid-template-columns: 1fr;
-    }
-    .services__grid{
-        grid-template-columns: 1fr;
-    }
-    .contact__main{
+    .gtc-1fr{
         grid-template-columns: 1fr;
     }
     .projects__tech-item{
