@@ -85,6 +85,7 @@ section{
 /* =========================
    HEADER
 ========================= */
+
 .header__container-mobile{
     display: none;
 }
@@ -870,6 +871,9 @@ section{
         color: var(--text-light);
         font-size: 14px;
     }
+    .header_nav {
+        display: none;
+    }
     .header__container-mobile{
         display: flex;
         flex-direction: row;
@@ -913,4 +917,5 @@ section{
         flex-direction: column;
         gap: 1rem;
     }
+    
 }
