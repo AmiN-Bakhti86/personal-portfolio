@@ -15,9 +15,15 @@
             <a href="#" class="header__logo" title="بازگشت به بالا">
                 A<span>.</span>
             </a>
-            <button id="menu_open">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <div style="display: flex; align-items: center; gap: 5px;">
+                <button class="theme-toggle" title="تغییر تم">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            
+                <button id="menu_open">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
             <nav class="header_nav">
                 <a href="#about-me">درباره من</a>
                 <a href="#skills">مهارت‌ها</a>
@@ -37,9 +43,13 @@
                 <a href="#services">خدمات</a>
                 <a href="#contact">تماس</a>
             </nav>
-            <button class="header__button Btn"> 
-                <a href="#contact">شروع همکاری</a>
-            </button>
+            <div class="header__actions">
+                <button class="theme-toggle" id="theme-btn" title="تغییر تم">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button class="header__button Btn">شروع همکاری</button>
+            </div>
+            
             
         </div>
     </header>
@@ -54,7 +64,8 @@
                         آماده برای پروژه‌های جدید
                     </span>
                     <h1>من <span>امین</span> هستم،<br>
-                    توسعه‌دهنده فرانت‌اند.</h1>
+                        <span id="typewriter" class="typewriter-text"></span>
+                    </h1>
                     <p>وب‌سایت‌هایی مدرن، سریع و ریسپانسیو می‌سازم که علاوه بر ظاهر حرفه‌ای، تجربه کاربری<br> خوبی هم داشته باشند.</p>
                     <div class="hero__text-button">
                         <a class="hero__text-button-1" href="#projects"> مشاهده نمونه کارها
@@ -96,7 +107,6 @@
 
         <!-- ================= ABOUT ================= -->
         <section class="about" id="about-me">
-            <!-- <div class="about__image"></div> -->
             <div class="about__container container">
                 <div class="about__text">
                     <h5>
@@ -354,7 +364,7 @@
                         <input type="email" placeholder="example@gmail.com" id="useremail">
                         <label for="message">پیام</label>
                         <textarea name="" id="message" placeholder="پیام شما..."></textarea>
-                        <button>
+                        <button type="submit">
                             ارسال پیام
                             <i class="fa-solid fa-arrow-left-long"></i>
                         </button>
@@ -381,11 +391,12 @@
 
         </div>
     </footer>
+    
         <!-- ================= SCROLL TO TOP ================= -->
         <a href="#" class="scroll-top" title="بازگشت به بالا">
             <i class="fa-solid fa-chevron-up"></i>
         </a>
-    <script src="./js/main.js"></script>
 
+    <script src="./js/main.js"></script>
 </body>
 </html>
